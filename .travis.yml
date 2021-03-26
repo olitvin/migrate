@@ -58,7 +58,7 @@ deploy:
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
     file:
       - cli/build/migrate.linux-amd64.tar.gz
@@ -79,7 +79,7 @@ deploy:
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
   - provider: packagecloud
     repository: migrate
@@ -91,7 +91,7 @@ deploy:
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
   - provider: packagecloud
     repository: migrate
@@ -103,7 +103,7 @@ deploy:
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
   - provider: packagecloud
     repository: migrate
@@ -115,7 +115,7 @@ deploy:
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
   - provider: packagecloud
     repository: migrate
@@ -127,12 +127,12 @@ deploy:
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
   - provider: script
     script: ./docker-deploy.sh
     skip_cleanup: true
     on:
       go: "1.15.x"
-      repo: golang-migrate/migrate
+      repo: olitvin/migrate
       tags: true
