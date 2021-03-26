@@ -82,7 +82,7 @@ func Open(url string) (Driver, error) {
 	u, err := nurl.Parse(url)
 	if err != nil {
 		return nil, fmt.Errorf("Unable to parse URL. Did you escape all reserved URL characters? "+
-			"See: https://github.com/golang-migrate/migrate#database-urls Error: %v", err)
+			"See: https://github.com/olitvin/migrate#database-urls Error: %v", err)
 	}
 
 	if u.Scheme == "" {

@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/gocql/gocql"
-	"github.com/golang-migrate/migrate/database"
+	"github.com/olitvin/migrate/database"
 )
 
 func init() {

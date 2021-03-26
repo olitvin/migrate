@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"bytes"
-	dt "github.com/golang-migrate/migrate/database/testing"
-	mt "github.com/golang-migrate/migrate/testing"
 	"github.com/lib/pq"
+	dt "github.com/olitvin/migrate/database/testing"
+	mt "github.com/olitvin/migrate/testing"
 )
 
 var versions = []mt.Version{

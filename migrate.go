@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/golang-migrate/migrate/database"
-	"github.com/golang-migrate/migrate/source"
+	"github.com/olitvin/migrate/database"
+	"github.com/olitvin/migrate/source"
 )
 
 // DefaultPrefetchMigrations sets the number of migrations to pre-read

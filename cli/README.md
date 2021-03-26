@@ -4,10 +4,10 @@
 
 #### Download pre-build binary (Windows, MacOS, or Linux)
 
-[Release Downloads](https://github.com/golang-migrate/migrate/releases)
+[Release Downloads](https://github.com/olitvin/migrate/releases)
 
 ```
-$ curl -L https://github.com/golang-migrate/migrate/releases/download/$version/migrate.$platform-amd64.tar.gz | tar xvz
+$ curl -L https://github.com/olitvin/migrate/releases/download/$version/migrate.$platform-amd64.tar.gz | tar xvz
 ```
 
 #### MacOS
@@ -19,8 +19,8 @@ Any help to make this happen would be appreciated!
 #### Linux (*.deb package)
 
 ```
-$ curl -L https://packagecloud.io/golang-migrate/migrate/gpgkey | apt-key add -
-$ echo "deb https://packagecloud.io/golang-migrate/migrate/ubuntu/ xenial main" > /etc/apt/sources.list.d/migrate.list
+$ curl -L https://packagecloud.io/olitvin/migrate/gpgkey | apt-key add -
+$ echo "deb https://packagecloud.io/olitvin/migrate/ubuntu/ xenial main" > /etc/apt/sources.list.d/migrate.list
 $ apt-get update
 $ apt-get install -y migrate
 ```
@@ -28,10 +28,10 @@ $ apt-get install -y migrate
 #### With Go toolchain
 
 ```
-$ go get -u -d github.com/golang-migrate/migrate/cli
-$ cd $GOPATH/src/github.com/golang-migrate/migrate/cli
+$ go get -u -d github.com/olitvin/migrate/cli
+$ cd $GOPATH/src/github.com/olitvin/migrate/cli
 $ dep ensure
-$ go build -tags 'postgres' -o /usr/local/bin/migrate github.com/golang-migrate/migrate/cli
+$ go build -tags 'postgres' -o /usr/local/bin/migrate github.com/olitvin/migrate/cli
 ```
 
 ##### Notes:
@@ -41,7 +41,7 @@ with the appropriate database tag(s) for the databases desired.  The tags
 correspond to the names of the sub-packages underneath the
 [`database`](../database) package.
 1. Similarly to the database build tags, if you need to support other sources, use the appropriate build tag(s).
-1. Support for build constraints will be removed in the future: https://github.com/golang-migrate/migrate/issues/60
+1. Support for build constraints will be removed in the future: https://github.com/olitvin/migrate/issues/60
 
 
 ## Usage
